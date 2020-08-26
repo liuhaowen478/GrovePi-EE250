@@ -36,7 +36,7 @@ def updateLCD(threshold, current):
         display += " OBJ PRES\n"
         setRGB(255, 0, 0)
     else:
-        display += "\n"
+        display += "         \n"
         setRGB(0, 255, 0)
     display += str(current).rjust(3) + "cm"
     if display != previous_display:
@@ -48,6 +48,9 @@ def updateLCD(threshold, current):
 is, if you run `python3 grovepi_sensors.py` in terminal, this if-statement will
 be true"""
 if __name__ == '__main__':
+    # Initial clear screen
+    setText("")
+
     ultrasonic = 4  # D4
     rotary = 0  # A0
 
