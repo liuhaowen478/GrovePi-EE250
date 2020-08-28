@@ -1,8 +1,9 @@
 """ EE 250L Lab 02: GrovePi Sensors
 
-List team members here.
+Haowen Liu
 
-Insert Github repository link here.
+https://github.com/liuhaowen478/GrovePi-EE250
+
 """
 
 """python3 interpreters in Ubuntu (and other linux distros) will look in a
