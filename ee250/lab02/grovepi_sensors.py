@@ -33,10 +33,10 @@ def updateLCD(threshold, current):
     display = str(threshold).rjust(3)
     display += "cm"
     if current < threshold:
-        display += " OBJ PRES\n"
+        display += " OBJ PRES \n"
         setRGB(255, 0, 0)
     else:
-        display += "         \n"
+        display += "          \n"
         setRGB(0, 255, 0)
     display += str(current).rjust(3) + "cm"
     if display != previous_display:
